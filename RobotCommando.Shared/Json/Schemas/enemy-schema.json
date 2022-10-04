@@ -32,6 +32,15 @@
     },
     "skill": {
       "type": "integer"
+    },
+    "battleResult": {
+      "type": "object",
+      "properties": {
+        "win": { "type": "integer" },
+        "lose": { "type": "integer" },
+        "escape": { "type": "integer" }
+      },
+      "required": [ "win" ]
     }
   },
   "required": [ "tag", "name", "description", "icon", "staminaMax", "stamina", "skillMax", "skill" ]
