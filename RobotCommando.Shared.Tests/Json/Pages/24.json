@@ -1,0 +1,32 @@
+{
+  "location": "City of Industry",
+  "text": "     This man-shaped robot is designed for dinosaur herding. It moves by walking. It has weapons for dealing with rogue dinosaurs, but they are not as powerful as those of a war robot.",
+  "robots": [
+    {
+      "bonusMax": 0,
+      "bonus": 0,
+      "types": 2,
+      "armorMax": 10,
+      "armor": 10,
+      "speedMax": 2,
+      "speed": 2,
+      "id": "be101296-6329-48eb-8db1-e7aee6c07109",
+      "tag": "Robot",
+      "name": "Cowboy",
+      "description": "A man-shaped robot designed for dinosaur herding",
+      "icon": ""
+    }
+  ],
+  "choices": [
+    {
+      "link": 47,
+      "text": "Check the light flyer."
+    },
+    {
+      "link": 70,
+      "text": "Chose a place to go.",
+      "condition": "c.Robot is not null",
+      "greyedoutIfDisabled": true
+    }
+  ]
+}

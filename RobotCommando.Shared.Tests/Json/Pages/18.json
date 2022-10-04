@@ -1,0 +1,14 @@
+{
+  "location": "Capital City",
+  "text": "     How will you approach the enemy encampment?",
+  "choices": [
+    {
+      "link": 55,
+      "text": "Fly towards it."
+    },
+    {
+      "link": 187,
+      "text": "Travel on the ground."
+    }
+  ]
+}

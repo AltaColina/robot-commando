@@ -1,0 +1,14 @@
+{
+  "location": "City of the Jungle",
+  "text": "     You hear a crashing sound in the jungle, coming towards you. It is a low, armoured dinosaur, waving a club-like tail back and forth. It is coming straight at you.",
+  "choices": [
+    {
+      "link": 400,
+      "text": "Attack the Dinosaur."
+    },
+    {
+      "link": 115,
+      "text": "Flee!"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "location": "Capital City",
+  "text": "     You decide to visit the Capitol Building, the seat of government of Thalos.",
+  "choices": [
+    {
+      "link": 42,
+      "text": "Go in your robot."
+    },
+    {
+      "link": 71,
+      "text": "Travel on foot."
+    }
+  ]
+}

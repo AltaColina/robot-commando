@@ -1,0 +1,11 @@
+{
+  "location": "Capital City",
+  "text": "     You are now flying above the city. The storm is incredibly violent. You cannot control your flyer!\r\n     You have to test your skill.",
+  "choices": [
+    {
+      "link": -1,
+      "effect": "c.Page.Choices[0].Link = c.Die.Roll(2) > c.Player.Skill ? 279 : 316",
+      "text": "Test your skill!"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "location": "Capital City",
+  "text": "     The main encampment of the Karosseans is easy enough to find; they have taken over the city stadium. Even from a distance you can see flying robots wheeling overhead.",
+  "choices": [
+    {
+      "link": 18,
+      "text": "Approach in your robot."
+    },
+    {
+      "link": 32,
+      "text": "Go on foot."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "Armor Plate": {
+    "onUse": {
+      "condition": "c.Robot is not null && c.Robot.Armor < c.Robot.ArmorMax",
+      "effect": "c.Robot.Armor++"
+    },
+    "id": "10267009-15e4-4d83-ac2d-30949687309b",
+    "tag": "Armor Plate",
+    "name": "Armor Plate",
+    "description": "Use: +1 armor to your robot.",
+    "icon": "armor_plate.png"
+  },
+  "Blue Potion": {
+    "id": "2c14fcde-3dec-4313-ae8d-e20c0a727f99",
+    "tag": "Blue Potion",
+    "name": "Blue Potion",
+    "description": "Possibly awakes the people of Thalos.",
+    "icon": "blue_potion.png"
+  },
+  "City of Guardians Location": {
+    "id": "fdaca8dd-6b6a-4608-873e-8a2999fe6ece",
+    "tag": "City of Guardians Location",
+    "name": "City of Guardians Location",
+    "description": "Coordinates to the City of the Guardians.",
+    "icon": "city_of_guardians_location.png"
+  },
+  "Cloak Model Reference": {
+    "id": "2de83423-3577-4ae5-af0d-8ed419ef3602",
+    "tag": "Cloak Model Reference",
+    "name": "Cloak Model Reference",
+    "description": "The model of a Cloak of Invisibility being tested at the Dinosaur Preserve.",
+    "icon": "cloak_model_reference.png"
+  },
+  "Cloak of Invisibility": {
+    "id": "7f57bf4d-849e-4bd8-93e7-0ad4617ea492",
+    "tag": "Cloak of Invisibility",
+    "name": "Cloak of Invisibility",
+    "description": "Makes you invisible to everyone for a short while.",
+    "icon": "cloak_of_invisibility.png"
+  },
+  "Karossean Book Reference": {
+    "id": "49a1c728-240d-4bee-99c0-68c9f8f0ea1a",
+    "tag": "Karossean Book Reference",
+    "name": "Karossean Book Reference",
+    "description": "'..the ancient Karosseans would settle a tribal dispute by choosing champions..'.",
+    "icon": "karossean_book_reference.png"
+  },
+  "Interface Transponder": {
+    "onAcquire": {
+      "effect": "c.Player.RobotSkill++"
+    },
+    "onDiscard": {
+      "effect": "c.Player.RobotSkill--"
+    },
+    "id": "b2e1ff9c-82f6-4ac6-b727-875ce5029178",
+    "tag": "Interface Transponder",
+    "name": "Interface Transponder",
+    "description": "+1 skill with robots (up to 11).",
+    "icon": "interface_transponder.png"
+  },
+  "Karossean Countersign": {
+    "id": "f4b8da91-fffd-406a-a0a5-94e7a9dccb61",
+    "tag": "Karossean Countersign",
+    "name": "Karossean Countersign",
+    "description": "The countersign karosseans use amongst officers.",
+    "icon": "karossean_countersign.png"
+  },
+  "Karossean Password": {
+    "id": "73a555e8-4f8c-443d-bcfa-e94066b05f07",
+    "tag": "Karossean Password",
+    "name": "Karossean Password",
+    "description": "The password karosseans use amongst officers.",
+    "icon": "karossean_password.png"
+  },
+  "Karossean Uniform": {
+    "id": "f4978ff9-f1bf-4296-b624-035115656b88",
+    "tag": "Karossean Uniform",
+    "name": "Karossean Uniform",
+    "description": "The standard karossean uniform used by soldiers.",
+    "icon": "karossean_uniform.png"
+  },
+  "Lavender Potion": {
+    "id": "365a17fc-65d0-42bc-a142-082a338ebcfa",
+    "tag": "Lavender Potion",
+    "name": "Lavender Potion",
+    "description": "Possibly awakes the people of Thalos.",
+    "icon": "lavender_potion.png"
+  },
+  "Luck Amulet": {
+    "onAcquire": {
+      "effect": "c.Player.Luck++"
+    },
+    "onDiscard": {
+      "effect": "c.Player.Luck--"
+    },
+    "id": "32350ab2-2847-4131-b58f-9839fcab29af",
+    "tag": "Luck Amulet",
+    "name": "Luck Amulet",
+    "description": "A scientifically proven good-luck charm. Your luck is increased by 1 while you have it.",
+    "icon": "luck_amulet.png"
+  },
+  "Medikit": {
+    "onUse": {
+      "condition": "c.Player.Stamina < c.Player.StaminaMax",
+      "effect": "c.Player.Stamina++"
+    },
+    "id": "3aa3322e-8811-4b75-bc3e-43913653fc81",
+    "tag": "Medikit",
+    "name": "Medikit",
+    "description": "Use: +1 stamina.",
+    "icon": "medikit.png"
+  },
+  "Robot Destroyer": {
+    "onUse": {
+      "condition": "c.Robot is not null && c.Robot.Armor > 0",
+      "effect": "c.Robot.Armor--"
+    },
+    "id": "2922ba49-a841-44df-a1bc-92f3d22db7be",
+    "tag": "Robot Destroyer",
+    "name": "Robot Destroyer",
+    "description": "Use: -1 stamina to your robot.",
+    "icon": "robot_destroyer.png"
+  },
+  "Seeker Missile": {
+    "onUse": {
+      "condition": "c.Robot is not null",
+      "effect": "c.Robot.Abilities.Add(new ActiveAbility { Name = \"Seeker Missile\", Description = \"Charges: 1. Use: deal 10 damage to enemy unit.\", Icon = \"\", Usages = 1, Effects = new() { [BattlePhase.BeforeRoll] = \"c.Other.Armor -= 10\" } }"
+    },
+    "id": "2285fb8b-40c4-4a28-b9dc-9a421c21402e",
+    "tag": "Seeker Missile",
+    "name": "Seeker Missile",
+    "description": "Use: attach to your robot to give it 'Seeker Missile' ability. 1 charge. Use: deal 10 damage to target enemy unit.",
+    "icon": "seeker_missile.png"
+  },
+  "Sword": {
+    "id": "9a17d248-8bfc-4322-b609-d8b0d2d645dd",
+    "tag": "Sword",
+    "name": "Sword",
+    "description": "Your trustwhorty weapon.",
+    "icon": "sword.png"
+  },
+  "State Sword": {
+    "id": "9c730b72-608a-433d-b91f-101ef38b1234",
+    "tag": "State Sword",
+    "name": "State Sword",
+    "description": "The sword of Thalos.",
+    "icon": "state_sword.png"
+  },
+  "Tangler Field": {
+    "id": "a1d59bfa-eec7-48fc-9e77-0cbe6bdcb046",
+    "tag": "Tangler Field",
+    "name": "Tangler Field",
+    "description": "Experimental device against flying machines.",
+    "icon": "tangler_field.png"
+  }
+}

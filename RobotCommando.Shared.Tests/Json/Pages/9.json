@@ -1,0 +1,47 @@
+{
+  "location": "City of Knowledge",
+  "text": "     There are several robots here, all identical. They are similar to the Cowboy Robot that you used on your ranch, but more heavily armed and armoured, for use against the largest dinosaurs. These Super-Cowboy Robots move by walking. Each has weapons almost as powerful as those of a war robot.\r\n     You may take one of these robots if you like.",
+  "robots": [
+    {
+      "bonusMax": 1,
+      "bonus": 1,
+      "types": 0,
+      "armorMax": 14,
+      "armor": 14,
+      "speedMax": 2,
+      "speed": 2,
+      "abilities": [
+        {
+          "condition": "c.Other.Types.HasFlag(MechaTypes.Dinossaur)",
+          "phase": 4,
+          "effects": {
+            "BeforeBattle": "c.Other.Skill -= 1",
+            "AfterBattle": "c.Other.Skill += 1"
+          },
+          "tag": "TriggerAbility",
+          "name": "Sonic Screamer",
+          "description": "-1 skill to all enemy dinossaurs.",
+          "icon": ""
+        }
+      ],
+      "tag": "Robot",
+      "name": "Super Cowboy",
+      "description": "",
+      "icon": ""
+    }
+  ],
+  "choices": [
+    {
+      "link": 129,
+      "text": "Get in your robot and cross the electro-fence."
+    },
+    {
+      "link": 85,
+      "text": "Go to the Administrative Building."
+    },
+    {
+      "link": 150,
+      "text": "Leave the Dinosaur Preserve."
+    }
+  ]
+}

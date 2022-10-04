@@ -1,0 +1,178 @@
+{
+  "Disarmed": {
+    "effects": {
+      "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Disarmed)",
+      "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Disarmed)"
+    },
+    "id": "3defbe94-4018-4d91-84fc-a6a540231a16",
+    "tag": "PassiveAbility",
+    "name": "Disarmed",
+    "description": "Disarmed. Cannot attack.",
+    "icon": ""
+  },
+  "Double Damage": {
+    "effects": {
+      "BeforeBattle": "c.This.Damage *= 2",
+      "AfterBattle": "c.This.Damage /= 2"
+    },
+    "id": "8869dbd0-8c4d-404e-bd15-a8cc4e30a168",
+    "tag": "PassiveAbility",
+    "name": "Double Damage",
+    "description": "Deals double damage on hit.",
+    "icon": ""
+  },
+  "Flying": {
+    "effects": {
+      "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+      "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+    },
+    "id": "3ecacd17-d4dd-4648-b12b-dac4b8c77f77",
+    "tag": "PassiveAbility",
+    "name": "Flying",
+    "description": "Can fly.",
+    "icon": ""
+  },
+  "Retaliate": {
+    "effects": {
+      "AfterRound": "c.Other.Armor -= 1"
+    },
+    "id": "6915d667-bf2e-442f-8e2b-1907d7b3c1bf",
+    "tag": "PassiveAbility",
+    "name": "Retaliate",
+    "description": "At the end of each round, deals 1 damage to the enemy robot.",
+    "icon": ""
+  },
+  "Acceleration": {
+    "condition": "c.This.Roll >= c.Other.Roll + 4",
+    "phase": 3,
+    "effects": {
+      "AfterRound": "c.This.Statuses.Add(MechaBattlerStatus.Accelerated)"
+    },
+    "id": "5ed2ab3c-7bab-40b5-ac68-8a0e32807aa2",
+    "tag": "TriggerAbility",
+    "name": "Acceleration",
+    "description": "Whenever roll exceeds enemy's roll by 4 or more, automatically win the next round.",
+    "icon": ""
+  },
+  "Anti-Flying": {
+    "condition": "c.Other.Abilities.Any(a => a.Name == \"Flying\")",
+    "phase": 0,
+    "effects": {
+      "BeforeBattle": "c.This.Skill += 3",
+      "AfterBattle": "c.This.Skill -= 3"
+    },
+    "id": "ff9122f6-2687-485f-b98d-5b719074fb48",
+    "tag": "TriggerAbility",
+    "name": "Anti-Flying",
+    "description": "+3 skill versus flying units.",
+    "icon": ""
+  },
+  "Entangle": {
+    "condition": "c.This.Roll > 15 && c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+    "phase": 3,
+    "effects": {
+      "AfterRoll": "c.Other.Statuses.Add(MechaBattlerStatus.Entangled)"
+    },
+    "id": "a09f9e67-c49c-42f7-81f6-f08f20aec605",
+    "tag": "TriggerAbility",
+    "name": "Entangle",
+    "description": "Whenever roll is greater than 15, entangle target non-flying enemy. Entagled units take 1 damage each round.",
+    "icon": ""
+  },
+  "Knockdown": {
+    "condition": "c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+    "phase": 5,
+    "effects": {
+      "AfterHit": "c.Other.Statuses.Add(MechaBattlerStatus.KnockedDown)"
+    },
+    "id": "84957e0b-8dfa-4c4e-a56b-0c3212cef171",
+    "tag": "TriggerAbility",
+    "name": "Knockdown",
+    "description": "Whenever this robot hits a humanoid unit, knock it down. Knock down units deal no damage in the next turn.",
+    "icon": ""
+  },
+  "Momentum": {
+    "condition": "c.This.Roll > c.Other.Roll",
+    "phase": 3,
+    "effects": {
+      "BeforeHit": "c.This.Damage += 1",
+      "AfterHit": "c.This.Damage -= 1"
+    },
+    "id": "740d1847-fc86-41ed-82ba-1babddf970a6",
+    "tag": "TriggerAbility",
+    "name": "Momentum",
+    "description": "Whenever roll exceeds enemy's roll by 4 or more, deal 1 extra damage that cannot be reduced.",
+    "icon": ""
+  },
+  "Skilled Combat": {
+    "condition": "c.This.Roll > 17",
+    "phase": 3,
+    "effects": {
+      "AfterRoll": "c.This.Statuses.Add(MechaBattlerStatus.Invencible)"
+    },
+    "id": "fc554fe1-7154-4f27-a101-335d99d16fc2",
+    "tag": "TriggerAbility",
+    "name": "Skilled Combat",
+    "description": "Whenever roll is greater than 17, take no damage this turn.",
+    "icon": ""
+  },
+  "Sonic Screamer": {
+    "condition": "c.Other.Types.HasFlag(MechaTypes.Dinossaur)",
+    "phase": 4,
+    "effects": {
+      "BeforeBattle": "c.Other.Skill -= 1",
+      "AfterBattle": "c.Other.Skill += 1"
+    },
+    "id": "c3e95a22-be7f-4329-a264-1600794a5519",
+    "tag": "TriggerAbility",
+    "name": "Sonic Screamer",
+    "description": "-1 skill to all enemy dinossaurs.",
+    "icon": ""
+  },
+  "Unfamiliar Controls": {
+    "condition": "c.This.Roll < 7",
+    "phase": 0,
+    "effects": {
+      "AfterRoll": "c.This.Armor = 0"
+    },
+    "id": "a3633787-ad87-49e9-a931-0d8f9699fc58",
+    "tag": "TriggerAbility",
+    "name": "Unfamiliar Controls",
+    "description": "Whenever roll is less than 7, eject controller."
+  },
+  "Powerful Strike": {
+    "usages": -1,
+    "effects": {
+      "AfterRoll": "c.This.Roll -= 2",
+      "BeforeHit": "c.This.Damage = 6",
+      "AfterRound": "c.This.Damage = 2"
+    },
+    "id": "c0c1961a-f529-46b6-b0ea-18bb798d69aa",
+    "tag": "ActiveAbility",
+    "name": "Powerful Strike",
+    "description": "Activate: -2 to roll. +4 damage on hit.",
+    "icon": ""
+  },
+  "Seeker Missile": {
+    "usages": 1,
+    "effects": {
+      "BeforeRoll": "c.Other.Armor -= 10"
+    },
+    "id": "5d759cd9-304d-4d8e-a705-8547a6abe154",
+    "tag": "ActiveAbility",
+    "name": "Seeker Missile",
+    "description": "Charges: 1. Use: deal 10 damage to enemy unit.",
+    "icon": ""
+  },
+  "Sonic Gun": {
+    "usages": 3,
+    "effects": {
+      "BeforeRoll": "c.Other.Armor -= c.Other.Types.HasFlag(MechaTypes.Dinossaur) ? c.Die.Roll(2) : c.Die.Roll()"
+    },
+    "id": "803d359e-f058-4197-a184-31b5f2e59111",
+    "tag": "ActiveAbility",
+    "name": "Sonic Gun",
+    "description": "Charges: 3. Deal 1d6 damage to target robot or 2d6 damage to target dinossaur.",
+    "icon": ""
+  }
+}

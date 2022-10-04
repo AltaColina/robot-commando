@@ -1,0 +1,16 @@
+{
+  "location": "City of Industry",
+  "text": "     This is the Robot Experimental Centre. You know little about the Centre except its name, but you have heard rumours that top-secret work is being done here.",
+  "choices": [
+    {
+      "link": 251,
+      "text": "Keep exploring the centre.",
+      "condition": "c.Page.IsVisited"
+    },
+    {
+      "link": 333,
+      "text": "Keep exploring the centre.",
+      "condition": "!c.Page.IsVisited"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "location": "City of the Jungle",
+  "text": "     Your path takes you across a shallow swamp; the road is narrow, and the ground to either side looks soft and sticky. When you round a corner, you see a large dinosaur ahead of you. It is not a flesh-eater, but it does not seem disposed to get out of your way.",
+  "choices": [
+    {
+      "link": 239,
+      "text": "Fight it!"
+    },
+    {
+      "link": 95,
+      "text": "Leave the road."
+    }
+  ]
+}

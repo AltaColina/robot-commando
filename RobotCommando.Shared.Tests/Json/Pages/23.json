@@ -1,0 +1,10 @@
+{
+  "location": "City of Pleasure",
+  "text": "     Unfortunately, this experimental craft is different from all other robots you have handled. Its Combat Bonus of 2 does not count for you until you have been through two combats with it.",
+  "choices": [
+    {
+      "link": 378,
+      "text": "Leave the City of Pleasure."
+    }
+  ]
+}

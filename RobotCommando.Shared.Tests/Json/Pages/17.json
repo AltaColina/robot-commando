@@ -1,0 +1,16 @@
+{
+  "location": "City of Knowledge",
+  "text": "     Are looking for something in particular?",
+  "choices": [
+    {
+      "link": 85,
+      "text": "Go search something else.",
+      "condition": "!c.Inventory.Contains(\"Cloak Model Reference\")"
+    },
+    {
+      "link": 53,
+      "text": "Search for the Cloak of Invisibility.",
+      "condition": "c.Inventory.Contains(\"Cloak Model Reference\")"
+    }
+  ]
+}

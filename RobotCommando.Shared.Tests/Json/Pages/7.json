@@ -1,0 +1,21 @@
+{
+  "location": "Current",
+  "text": "     You give the proper countersign. The Karossean sentry radios you back: 'Pass, friend!' You have fooled him! You can go about your work.",
+  "choices": [
+    {
+      "link": 63,
+      "text": "Keep exploring the City of Knowledge.",
+      "condition": "c.Page.Location == WorldLocation.CityOfKnowledge"
+    },
+    {
+      "link": 132,
+      "text": "Keep exploring the City of Industry.",
+      "condition": "c.Page.Location == WorldLocation.CityOfIndustry"
+    },
+    {
+      "link": 222,
+      "text": "Keep exploring the Capital City.",
+      "condition": "c.Page.Location == WorldLocation.CapitalCity"
+    }
+  ]
+}

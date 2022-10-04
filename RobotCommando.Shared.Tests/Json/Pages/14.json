@@ -1,0 +1,32 @@
+{
+  "location": "City of Knowledge",
+  "text": "     You stay in your robot and travel to the huge Thalian Museum. This is the largest museum in all the land; it is full of exhibits on every imaginable subject.\r\n\r\n     As you approach the museum, you keep a sharp watch, but you see no enemies. When you arrive, you park your robot in front of the building and walk up the steps, past a pair of carved stone dragons. The museum attendant is snoring, but the little Information Robot is alert. 'Can I help you?' it asks. What will you do:",
+  "text2": "     You stay in your robot and travel to the huge Thalian Museum. This is the largest museum in all the land; it is full of exhibits on every imaginable subject.",
+  "choices": [
+    {
+      "link": 36,
+      "text": "Ask for military information.",
+      "condition": "!c.Page.IsVisited"
+    },
+    {
+      "link": 80,
+      "text": "Ask for information on sleeping sickness.",
+      "condition": "!c.Page.IsVisited"
+    },
+    {
+      "link": 58,
+      "text": "Ask for information on the Karosseans.",
+      "condition": "!c.Page.IsVisited"
+    },
+    {
+      "link": 102,
+      "text": "Leave the museum.",
+      "condition": "!c.Page.IsVisited"
+    },
+    {
+      "link": 160,
+      "text": "Keep going to the museum.",
+      "condition": "c.Page.IsVisited"
+    }
+  ]
+}

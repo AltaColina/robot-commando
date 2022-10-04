@@ -1,0 +1,14 @@
+{
+  "location": "City of Industry",
+  "text": "     The tunnel goes lower and lower into the earth.\r\n     Then it opens into a wide, dimly lit vault.",
+  "choices": [
+    {
+      "link": 340,
+      "text": "Enter the vault."
+    },
+    {
+      "link": 178,
+      "text": "Continue downwards."
+    }
+  ]
+}

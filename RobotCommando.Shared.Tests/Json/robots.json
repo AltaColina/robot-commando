@@ -1,0 +1,384 @@
+{
+  "Cargo Cab": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 12,
+    "armor": 12,
+    "speedMax": 1,
+    "speed": 1,
+    "id": "b5f2ac4f-68ef-42a8-b0e8-0756086361e3",
+    "tag": "Robot",
+    "name": "Cargo Cab",
+    "description": "",
+    "icon": ""
+  },
+  "Control Robot": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 9,
+    "armor": 9,
+    "speedMax": 1,
+    "speed": 1,
+    "id": "64108f19-6e63-4a65-8881-d231466534f3",
+    "tag": "Robot",
+    "name": "Control Robot",
+    "description": "",
+    "icon": ""
+  },
+  "Cowboy": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 2,
+    "armorMax": 10,
+    "armor": 10,
+    "speedMax": 2,
+    "speed": 2,
+    "id": "be101296-6329-48eb-8db1-e7aee6c07109",
+    "tag": "Robot",
+    "name": "Cowboy",
+    "description": "",
+    "icon": ""
+  },
+  "Digger": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 16,
+    "armor": 16,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "usages": -1,
+        "effects": {
+          "AfterRoll": "c.This.Roll -= 2",
+          "BeforeHit": "c.This.Damage = 6",
+          "AfterRound": "c.This.Damage = 2"
+        },
+        "id": "eeaa6af6-7fca-4f38-8437-d28b80d4be0e",
+        "tag": "ActiveAbility",
+        "name": "Powerful Strike",
+        "description": "Activate: -2 to roll. +4 damage on hit.",
+        "icon": ""
+      }
+    ],
+    "id": "d668b394-94c4-4f96-a92c-44e541399186",
+    "tag": "Robot",
+    "name": "Digger",
+    "description": "Slow, but powerful machine that runs on treads. Has a bulldozer blade on the front, a scoop-shovel on the back and two large claws for lifting.",
+    "icon": ""
+  },
+  "Dragonfly": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 5,
+    "armor": 5,
+    "speedMax": 5,
+    "speed": 5,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "58f25860-1876-4169-bfaa-ee637dc19881",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "06d34dfe-b3c6-4d99-a23c-6fc0102c96bf",
+    "tag": "Robot",
+    "name": "Dragonfly",
+    "description": "",
+    "icon": ""
+  },
+  "Escape Robot": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 1,
+    "armor": 1,
+    "speedMax": 4,
+    "speed": 4,
+    "abilities": [],
+    "id": "e6de5c97-816b-4e40-b56c-c1ff92d36dd3",
+    "tag": "Robot",
+    "name": "Escape Robot",
+    "description": "",
+    "icon": ""
+  },
+  "Farm Robot": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 7,
+    "armor": 7,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "bddfab11-8c42-4123-b4d7-1217e163246c",
+    "tag": "Robot",
+    "name": "Farm Robot",
+    "description": "",
+    "icon": ""
+  },
+  "Hedgehog": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 8,
+    "armor": 8,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "condition": "c.Other.Abilities.Any(a => a.Name == \"Flying\")",
+        "phase": 0,
+        "effects": {
+          "BeforeBattle": "c.This.Skill += 3",
+          "AfterBattle": "c.This.Skill -= 3"
+        },
+        "id": "bbd41317-aea7-4211-a324-0f5b7953fdb4",
+        "tag": "TriggerAbility",
+        "name": "Anti-Flying",
+        "description": "+3 skill versus flying units.",
+        "icon": ""
+      }
+    ],
+    "id": "72b2f13c-a7fe-4c5a-ac87-2398f3ca282b",
+    "tag": "Robot",
+    "name": "Hedgehog",
+    "description": "",
+    "icon": ""
+  },
+  "Myrmidon": {
+    "bonusMax": 1,
+    "bonus": 1,
+    "types": 2,
+    "armorMax": 12,
+    "armor": 12,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "90190ea5-342f-44da-943f-9582e769e2d8",
+    "tag": "Robot",
+    "name": "Myrmidon",
+    "description": "",
+    "icon": ""
+  },
+  "Robot Car": {
+    "bonusMax": 0,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 1,
+    "armor": 1,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Disarmed)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Disarmed)"
+        },
+        "id": "83d7f7c1-87fa-4978-a2de-728375294746",
+        "tag": "PassiveAbility",
+        "name": "Disarmed",
+        "description": "Disarmed. Cannot attack.",
+        "icon": ""
+      }
+    ],
+    "id": "c755a2f8-93f8-4b3d-adac-0c2dc474d24d",
+    "tag": "Robot",
+    "name": "Robot Car",
+    "description": "",
+    "icon": ""
+  },
+  "Robotank": {
+    "bonusMax": 2,
+    "bonus": 2,
+    "types": 0,
+    "armorMax": 18,
+    "armor": 18,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "usages": 3,
+        "effects": {
+          "BeforeRoll": "c.Other.Armor -= c.Other.Types.HasFlag(MechaTypes.Dinossaur) ? c.Die.Roll(2) : c.Die.Roll()"
+        },
+        "id": "26eeead8-0d2d-43a9-8ef4-15814eaa59b8",
+        "tag": "ActiveAbility",
+        "name": "Sonic Gun",
+        "description": "Charges: 3. Deal 1d6 damage to target robot or 2d6 damage to target dinossaur.",
+        "icon": ""
+      }
+    ],
+    "id": "f0a5b361-e07b-4334-9402-21cef2935769",
+    "tag": "Robot",
+    "name": "Robotank",
+    "description": "",
+    "icon": ""
+  },
+  "Serpent VII": {
+    "bonusMax": 1,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 9,
+    "armor": 0,
+    "speedMax": 3,
+    "speed": 0,
+    "abilities": [
+      {
+        "condition": "c.This.Roll > 15 && c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+        "phase": 5,
+        "effects": {
+          "AfterRoll": "c.Other.Statuses.Add(MechaBattlerStatus.Entangled)"
+        },
+        "id": "7bb67a48-a7e4-4cfa-abd8-c63727a547d4",
+        "tag": "TriggerAbility",
+        "name": "Entangle",
+        "description": "Whenever roll is greater than 15, entangle target non-flying enemy. Entagled units take 1 damage each round.",
+        "icon": ""
+      }
+    ],
+    "id": "c0689e04-db67-4905-be1d-ea3795bb42c1",
+    "tag": "Robot",
+    "name": "Serpent VII",
+    "description": "",
+    "icon": ""
+  },
+  "Stilter": {
+    "bonusMax": -1,
+    "bonus": 0,
+    "types": 0,
+    "armorMax": 4,
+    "armor": 0,
+    "speedMax": 2,
+    "speed": 0,
+    "abilities": [],
+    "id": "8dbfdf6c-3a37-48a8-9519-a7d6b2a39721",
+    "tag": "Robot",
+    "name": "Stilter",
+    "description": "",
+    "icon": ""
+  },
+  "Super Cowboy": {
+    "bonusMax": 1,
+    "bonus": 1,
+    "types": 0,
+    "armorMax": 14,
+    "armor": 14,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [
+      {
+        "condition": "c.Other.Types.HasFlag(MechaTypes.Dinossaur)",
+        "phase": 4,
+        "effects": {
+          "BeforeBattle": "c.Other.Skill -= 1",
+          "AfterBattle": "c.Other.Skill += 1"
+        },
+        "id": "c3e95a22-be7f-4329-a264-1600794a5519",
+        "tag": "TriggerAbility",
+        "name": "Sonic Screamer",
+        "description": "-1 skill to all enemy dinossaurs.",
+        "icon": ""
+      }
+    ],
+    "id": "2bc1d29e-3ab8-466d-92e2-13a5fca71bac",
+    "tag": "Robot",
+    "name": "Super Cowboy",
+    "description": "",
+    "icon": ""
+  },
+  "Trooper XI": {
+    "bonusMax": 2,
+    "bonus": 2,
+    "types": 2,
+    "armorMax": 12,
+    "armor": 12,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "a266c218-1b1d-4986-a70c-b56022d28bd6",
+    "tag": "Robot",
+    "name": "Trooper XI",
+    "description": "",
+    "icon": ""
+  },
+  "Utility Robot": {
+    "bonusMax": -2,
+    "bonus": -2,
+    "types": 0,
+    "armorMax": 4,
+    "armor": 4,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [],
+    "id": "b9c75b55-3d30-418f-93ab-a9c5e18a03e9",
+    "tag": "Robot",
+    "name": "Utility Robot",
+    "description": "",
+    "icon": ""
+  },
+  "Walker": {
+    "bonusMax": -1,
+    "bonus": -1,
+    "types": 0,
+    "armorMax": 6,
+    "armor": 6,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [],
+    "id": "ff99a288-3f4e-4c78-9042-8afd66b750ad",
+    "tag": "Robot",
+    "name": "Walker",
+    "description": "",
+    "icon": ""
+  },
+  "Wasp Fighter": {
+    "bonusMax": 2,
+    "bonus": 2,
+    "types": 0,
+    "armorMax": 6,
+    "armor": 6,
+    "speedMax": 4,
+    "speed": 4,
+    "abilities": [
+      {
+        "condition": "c.This.Roll >= c.Other.Roll + 4",
+        "phase": 5,
+        "effects": {
+          "AfterRound": "c.This.Statuses.Add(MechaBattlerStatus.Accelerated)"
+        },
+        "id": "91c63308-0b63-49c4-b9e9-822626d76067",
+        "tag": "TriggerAbility",
+        "name": "Acceleration",
+        "description": "Whenever roll exceeds enemy's roll by 4 or more, automatically win the next round.",
+        "icon": ""
+      },
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "58f25860-1876-4169-bfaa-ee637dc19881",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "2a2c2181-16bf-4ebb-b4e5-a2e20fecb165",
+    "tag": "Robot",
+    "name": "Wasp Fighter",
+    "description": "",
+    "icon": ""
+  }
+}

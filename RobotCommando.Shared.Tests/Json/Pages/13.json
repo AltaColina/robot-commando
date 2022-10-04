@@ -1,0 +1,39 @@
+{
+  "location": "City of Knowledge",
+  "text": "     You enter the village and investigate. You find one useful robot, a Digger Robot. This slow but powerful machine rides on treads. It has a bulldozer blade on the front, a scoop-shovel on the back, and two large claws for lifting.",
+  "robots": [
+    {
+      "bonusMax": 0,
+      "bonus": 0,
+      "types": 0,
+      "armorMax": 16,
+      "armor": 16,
+      "speedMax": 1,
+      "speed": 1,
+      "abilities": [
+        {
+          "usages": -1,
+          "effects": {
+            "AfterRoll": "c.This.Roll -= 2",
+            "BeforeHit": "c.This.Damage = 6",
+            "AfterRound": "c.This.Damage = 2"
+          },
+          "tag": "ActiveAbility",
+          "name": "Powerful Strike",
+          "description": "Activate: -2 to roll. +4 damage on hit.",
+          "icon": ""
+        }
+      ],
+      "tag": "Robot",
+      "name": "Digger",
+      "description": "Slow, but powerful machine that runs on treads. Has a bulldozer blade on the front, a scoop-shovel on the back and two large claws for lifting.",
+      "icon": ""
+    }
+  ],
+  "choices": [
+    {
+      "link": 361,
+      "text": "Explore somewhere else in the City of Knowledge."
+    }
+  ]
+}

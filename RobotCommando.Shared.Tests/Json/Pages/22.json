@@ -1,0 +1,10 @@
+{
+  "location": "City of the Guardians",
+  "text": "     You use the code-words you found with the map reference. 'Acceptable,' crackles the voice of the guardian computer. 'Entering at Clearance Level Zero.'",
+  "choices": [
+    {
+      "link": 175,
+      "text": "Enter the building."
+    }
+  ]
+}
