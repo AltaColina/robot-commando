@@ -10,12 +10,12 @@
       "types": 0,
       "armorMax": 14,
       "armor": 14,
-      "speedMax": 2,
-      "speed": 2,
+      "speedMax": "Average",
+      "speed": "Average",
       "abilities": [
         {
-          "condition": "c.Other.Types.HasFlag(MechaTypes.Dinossaur)",
-          "phase": 4,
+          "condition": "c.Other.Type == MechaTypes.Dinossaur",
+          "phase": "BeforeBattle",
           "effects": {
             "BeforeBattle": "c.Other.Skill -= 1",
             "AfterBattle": "c.Other.Skill += 1"
