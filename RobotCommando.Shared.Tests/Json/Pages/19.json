@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 19,
   "location": "City of the Jungle",
   "text": "     You hear a crashing sound in the jungle, coming towards you. It is a low, armoured dinosaur, waving a club-like tail back and forth. It is coming straight at you.",
   "choices": [

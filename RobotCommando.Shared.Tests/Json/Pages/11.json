@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 11,
   "location": "Capital City",
   "text": "     The hospital is crawling with Karosseans, both soldiers and doctors. By hiding and skulking, you manage to snatch two medikits. You cannot risk staying longer.",
   "choices": [

@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 17,
   "location": "City of Knowledge",
   "text": "     Are looking for something in particular?",
   "choices": [

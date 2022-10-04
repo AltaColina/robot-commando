@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 10,
   "location": "Capital City",
   "text": "     You decide to visit the Capitol Building, the seat of government of Thalos.",
   "choices": [

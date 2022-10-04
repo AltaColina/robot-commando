@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 7,
   "location": "Current",
   "text": "     You give the proper countersign. The Karossean sentry radios you back: 'Pass, friend!' You have fooled him! You can go about your work.",
   "choices": [

@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 1,
   "location": "City of Industry",
   "text": "     At the robot parking-area, you stop and look around. There are several robots there, but only two seem suitable for long-distance travel. You study them both. You can take a standard 'cowboy' walking robot, which is not fast, but sturdy and adaptable or a light flyer, which is very speedy and manoeuvrable, but not really intended for combat.",
   "choices": [

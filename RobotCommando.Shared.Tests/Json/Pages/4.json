@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 4,
   "location": "Capital City",
   "text": "     The main encampment of the Karosseans is easy enough to find; they have taken over the city stadium. Even from a distance you can see flying robots wheeling overhead.",
   "choices": [

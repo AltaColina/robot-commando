@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 2,
   "location": "City of the Guardians",
   "text": "     'Insufficient data,' replies the computer. 'Probability of Karossean trick 67 per cent. You have five seconds to change your course.'",
   "choices": [

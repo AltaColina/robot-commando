@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 5,
   "location": "City of the Jungle",
   "text": "     Your path takes you across a shallow swamp; the road is narrow, and the ground to either side looks soft and sticky. When you round a corner, you see a large dinosaur ahead of you. It is not a flesh-eater, but it does not seem disposed to get out of your way.",
   "choices": [

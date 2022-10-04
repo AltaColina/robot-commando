@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 8,
   "location": "City of Storms",
   "text": "     The sea-coast is a narrow strip of sand, bounded on one side by the ocean and on the other side by steep cliffs. After a few minutes of travel, you see something ahead.\r\n     It is a huge herd of Brontosaurus dinosaurs.\r\n     Most of them are munching on seaweed thrown up by the storms, but a few are investigating something that glitters.",
   "text2": "     The sea-coast is a narrow strip of sand, bounded on one side by the ocean and on the other side by steep cliffs. After a few minutes of travel, you don't see anything special.",

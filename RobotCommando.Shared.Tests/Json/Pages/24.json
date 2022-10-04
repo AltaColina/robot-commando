@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 24,
   "location": "City of Industry",
   "text": "     This man-shaped robot is designed for dinosaur herding. It moves by walking. It has weapons for dealing with rogue dinosaurs, but they are not as powerful as those of a war robot.",
   "robots": [

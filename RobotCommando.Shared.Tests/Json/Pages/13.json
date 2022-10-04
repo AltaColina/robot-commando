@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 13,
   "location": "City of Knowledge",
   "text": "     You enter the village and investigate. You find one useful robot, a Digger Robot. This slow but powerful machine rides on treads. It has a bulldozer blade on the front, a scoop-shovel on the back, and two large claws for lifting.",
   "robots": [
@@ -8,8 +10,8 @@
       "types": 0,
       "armorMax": 16,
       "armor": 16,
-      "speedMax": 1,
-      "speed": 1,
+      "speedMax": "Slow",
+      "speed": "Slow",
       "abilities": [
         {
           "usages": -1,

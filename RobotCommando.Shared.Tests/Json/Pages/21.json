@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 21,
   "location": "City of Worship",
   "text": "     You flee in fear out of the temple. You can feel the disapproval of the Powers of Glory. Lose 1 luck point and 1 skill point for your cowardice.",
   "effects": [

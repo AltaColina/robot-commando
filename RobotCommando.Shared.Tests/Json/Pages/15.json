@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 15,
   "location": "City of Industry",
   "text": "     The tunnel goes lower and lower into the earth.\r\n     Then it opens into a wide, dimly lit vault.",
   "choices": [

@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 9,
   "location": "City of Knowledge",
   "text": "     There are several robots here, all identical. They are similar to the Cowboy Robot that you used on your ranch, but more heavily armed and armoured, for use against the largest dinosaurs. These Super-Cowboy Robots move by walking. Each has weapons almost as powerful as those of a war robot.\r\n     You may take one of these robots if you like.",
   "robots": [

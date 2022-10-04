@@ -19,11 +19,13 @@ var defaultSerializerOptions = new JsonSerializerOptions(JsonSerializerDefaults.
     DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     Converters =
     {
-        new AbilityJsonConverter(),
-        new EffectJsonConverter<Game>(),
-        new ConditionJsonConverter<Game>(),
-        new EffectJsonConverter<MechaBattle>(),
-        new ConditionJsonConverter<MechaBattle>(),
+            new AbilityJsonConverter(),
+            new EffectJsonConverter<Game>(),
+            new ConditionJsonConverter<Game>(),
+            new EffectJsonConverter<MechaBattle>(),
+            new ConditionJsonConverter<MechaBattle>(),
+            new WorldLocationJsonConverter(),
+            new JsonStringEnumConverter(),
     }
 };
 

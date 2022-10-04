@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 25,
   "location": "City of Industry",
   "text": "     This is the Robot Experimental Centre. You know little about the Centre except its name, but you have heard rumours that top-secret work is being done here.",
   "choices": [

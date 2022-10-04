@@ -66,6 +66,8 @@ public class Serialization
             new ConditionJsonConverter<Game>(),
             new EffectJsonConverter<MechaBattle>(),
             new ConditionJsonConverter<MechaBattle>(),
+            new WorldLocationJsonConverter(),
+            new JsonStringEnumConverter(),
         }
     };
 
@@ -903,6 +905,19 @@ public class Serialization
         foreach (var file in Directory.EnumerateFiles(folder, "*.json"))
         {
             var json = File.ReadAllText(file);
+            var node1 = JsonNode.Parse(json)!;
+            var node2 = JsonNode.Parse("{}")!;
+            node2.Root["$schema"] = "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json";
+            node2.Root["number"] = Int32.Parse(Path.GetFileNameWithoutExtension(file));
+            foreach (var property in node1.AsObject().ToList())
+            {
+                if (property.Key == "$schema")
+                    continue;
+                node1.Root.AsObject().Remove(property.Key);
+                node2.Root.AsObject().Add(property);
+            }
+            json = node2.ToJsonString(DefaultSerializerOptions);
+            File.WriteAllText(file, json);
             var page = JsonSerializer.Deserialize<Page>(json, DefaultSerializerOptions)!;
             pages.Add(page);
         }

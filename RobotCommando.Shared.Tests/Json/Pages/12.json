@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 12,
   "location": "Capital City",
   "text": "     You are now flying above the city. The storm is incredibly violent. You cannot control your flyer!\r\n     You have to test your skill.",
   "choices": [

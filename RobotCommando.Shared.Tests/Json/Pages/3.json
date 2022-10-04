@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "number": 3,
   "location": "City of Knowledge",
   "text": "     Because you are not familiar with this type of robot, you do not get the normal combat bonus with it - in fact, your skill is 1 less than usual while you use it. You realize you had better get out of there while you can.",
   "choices": [
