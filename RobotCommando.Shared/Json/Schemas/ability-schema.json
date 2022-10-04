@@ -30,19 +30,16 @@
       "type": "string"
     },
     "effects": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "BeforeBattle": { "type": "string" },
-          "BeforeRound": { "type": "string" },
-          "BeforeRoll": { "type": "string" },
-          "AfterRoll": { "type": "string" },
-          "BeforeHit": { "type": "string" },
-          "AfterHit": { "type": "string" },
-          "AfterRound": { "type": "string" },
-          "AfterBattle": { "type": "string" }
-        }
+      "type": "object",
+      "properties": {
+        "BeforeBattle": { "type": "string" },
+        "BeforeRound": { "type": "string" },
+        "BeforeRoll": { "type": "string" },
+        "AfterRoll": { "type": "string" },
+        "BeforeHit": { "type": "string" },
+        "AfterHit": { "type": "string" },
+        "AfterRound": { "type": "string" },
+        "AfterBattle": { "type": "string" }
       }
     },
     "condition": {
