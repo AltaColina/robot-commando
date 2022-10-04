@@ -68,7 +68,7 @@
     "icon": ""
   },
   "Entangle": {
-    "condition": "c.This.Roll > 15 && c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+    "condition": "c.This.Roll > 15 && c.Other.Type == MechaType.Humanoid",
     "phase": 3,
     "effects": {
       "AfterRoll": "c.Other.Statuses.Add(MechaBattlerStatus.Entangled)"
@@ -80,7 +80,7 @@
     "icon": ""
   },
   "Knockdown": {
-    "condition": "c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+    "condition": "c.Other.Type == MechaType.Humanoid",
     "phase": 5,
     "effects": {
       "AfterHit": "c.Other.Statuses.Add(MechaBattlerStatus.KnockedDown)"
@@ -117,7 +117,7 @@
     "icon": ""
   },
   "Sonic Screamer": {
-    "condition": "c.Other.Types.HasFlag(MechaTypes.Dinossaur)",
+    "condition": "c.Other.Type == MechaType.Dinossaur",
     "phase": 4,
     "effects": {
       "BeforeBattle": "c.Other.Skill -= 1",
@@ -167,7 +167,7 @@
   "Sonic Gun": {
     "usages": 3,
     "effects": {
-      "BeforeRoll": "c.Other.Armor -= c.Other.Types.HasFlag(MechaTypes.Dinossaur) ? c.Die.Roll(2) : c.Die.Roll()"
+      "BeforeRoll": "c.Other.Armor -= c.Other.Type == MechaType.Dinossaur ? c.Die.Roll(2) : c.Die.Roll()"
     },
     "id": "803d359e-f058-4197-a184-31b5f2e59111",
     "tag": "ActiveAbility",

@@ -210,7 +210,7 @@
       {
         "usages": 3,
         "effects": {
-          "BeforeRoll": "c.Other.Armor -= c.Other.Types.HasFlag(MechaTypes.Dinossaur) ? c.Die.Roll(2) : c.Die.Roll()"
+          "BeforeRoll": "c.Other.Armor -= c.Other.Type == MechaType.Dinossaur ? c.Die.Roll(2) : c.Die.Roll()"
         },
         "id": "26eeead8-0d2d-43a9-8ef4-15814eaa59b8",
         "tag": "ActiveAbility",
@@ -235,7 +235,7 @@
     "speed": 0,
     "abilities": [
       {
-        "condition": "c.This.Roll > 15 && c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+        "condition": "c.This.Roll > 15 && c.Other.Type == MechaType.Humanoid",
         "phase": 5,
         "effects": {
           "AfterRoll": "c.Other.Statuses.Add(MechaBattlerStatus.Entangled)"
@@ -278,7 +278,7 @@
     "speed": 2,
     "abilities": [
       {
-        "condition": "c.Other.Types.HasFlag(MechaTypes.Dinossaur)",
+        "condition": "c.Other.Type == MechaType.Dinossaur",
         "phase": 4,
         "effects": {
           "BeforeBattle": "c.Other.Skill -= 1",

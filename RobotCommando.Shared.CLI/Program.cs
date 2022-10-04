@@ -92,7 +92,7 @@ while (robot is null)
 {
     Console.WriteLine("Pick robot (type its name)");
     foreach (var (name, r) in robots)
-        Console.WriteLine($"- {name} ({r.Types}) [{r.Armor}, {r.Bonus}, {r.Speed}] {{{String.Join(", ", r.Abilities.Select(a => a.Name))}}}");
+        Console.WriteLine($"- {name} ({r.Type}) [{r.Armor}, {r.Bonus}, {r.Speed}] {{{String.Join(", ", r.Abilities.Select(a => a.Name))}}}");
     var line = Console.ReadLine();
     if (line is null || !robots.TryGetValue(line, out robot))
         Console.WriteLine("invalid input");
@@ -104,7 +104,7 @@ while (monster is null)
 {
     Console.WriteLine("Pick monster (type its name)");
     foreach (var (name, m) in monsters)
-        Console.WriteLine($"- {name} ({m.Types}) [{m.Armor}, {m.Skill}, {m.Speed}] {{{String.Join(", ", m.Abilities.Select(a => a.Name))}}}");
+        Console.WriteLine($"- {name} ({m.Type}) [{m.Armor}, {m.Skill}, {m.Speed}] {{{String.Join(", ", m.Abilities.Select(a => a.Name))}}}");
     var line = Console.ReadLine();
     if (line is null || !monsters.TryGetValue(line, out monster))
         Console.WriteLine("invalid input");

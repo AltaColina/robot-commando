@@ -1,4 +1,4 @@
-﻿namespace RobotCommando.Models.Mechas;
+﻿namespace RobotCommando.Models.Battling;
 
 public sealed class BattleResult
 {

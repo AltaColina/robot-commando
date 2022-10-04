@@ -1,4 +1,6 @@
-﻿namespace RobotCommando.Models.Mechas;
+﻿using RobotCommando.Models.Battling;
+
+namespace RobotCommando.Models.Mechas;
 
 public sealed class Monster : Mecha
 {

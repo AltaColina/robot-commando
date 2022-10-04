@@ -1,6 +1,6 @@
 ﻿namespace RobotCommando.Models.Mechas;
 
-public enum MechaTypes
+public enum MechaType
 {
     Unspecified, Dinossaur, Humanoid
 }

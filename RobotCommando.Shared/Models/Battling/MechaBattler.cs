@@ -6,7 +6,7 @@ namespace RobotCommando.Models.Battling;
 
 public sealed class MechaBattler : Battler
 {
-    public MechaTypes Types { get; init; }
+    public MechaType Type { get; init; }
 
     public int ArmorMax { get; init; }
     public int Armor { get; set; }
@@ -26,7 +26,7 @@ public sealed class MechaBattler : Battler
         Name = robot.Name;
         Description = robot.Description;
         Icon = robot.Icon;
-        Types = robot.Types;
+        Type = robot.Type;
         ArmorMax = robot.ArmorMax;
         Armor = robot.Armor;
         SkillMax = player.SkillMax + player.RobotSkill + robot.BonusMax;
@@ -41,7 +41,7 @@ public sealed class MechaBattler : Battler
         Name = monster.Name;
         Description = monster.Description;
         Icon = monster.Icon;
-        Types = monster.Types;
+        Type = monster.Type;
         ArmorMax = monster.ArmorMax;
         Armor = monster.Armor;
         SkillMax = monster.SkillMax;

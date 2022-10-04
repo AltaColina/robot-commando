@@ -1,5 +1,4 @@
 ﻿using RobotCommando.Models.Items;
-using RobotCommando.Models.Mechas;
 
 namespace RobotCommando.Models.Battling;
 public abstract class Battle<T> where T : Battler

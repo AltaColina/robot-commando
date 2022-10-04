@@ -44,7 +44,7 @@
     "speed": 1,
     "abilities": [
       {
-        "condition": "c.Other.Types.HasFlag(MechaTypes.Humanoid)",
+        "condition": "c.Other.Type == MechaType.Humanoid",
         "phase": 5,
         "effects": {
           "AfterHit": "c.Other.Statuses.Add(MechaBattlerStatus.KnockedDown)"
