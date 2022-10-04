@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
-  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/item-schema.json",
+  "$id": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/item-schema.json",
   "title": "JSON Schema for Item",
 
   "definitions": {
@@ -10,7 +10,7 @@
         "condition": { "type": "string" },
         "effect": { "type": "string" }
       },
-      "required": ["effect"]
+      "required": [ "effect" ]
     }
   },
 

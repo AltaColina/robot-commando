@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
-  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/robot-schema.json",
+  "$id": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/robot-schema.json",
   "title": "JSON Schema for Robot",
 
   "type": "object",
@@ -48,7 +48,7 @@
     "abilities": {
       "type": "array",
       "items": {
-        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\ability-schema.json"
+        "$ref": "https://raw.githubusercontent.com/AltaColina/robot-commando/main/RobotCommando.Shared/Json/Schemas/ability-schema.json"
       }
     }
   },

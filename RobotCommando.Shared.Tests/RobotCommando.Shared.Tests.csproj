@@ -27,7 +27,4 @@
   <ItemGroup>
     <ProjectReference Include="..\RobotCommando.Shared\RobotCommando.Shared.csproj" />
   </ItemGroup>
-
-  <ProjectExtensions><VisualStudio><UserProperties json_4pages_40_1json__JsonSchema="..\\RobotCommando.Shared\\Json\\Schemas\\page-schema.json" /></VisualStudio></ProjectExtensions>
-
 </Project>
