@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/robot-schema.json",
+  "title": "JSON Schema for Robot",
+
+  "type": "object",
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [ "Unspecified", "Dinossaur", "Humanoid" ]
+    },
+    "armorMax": {
+      "type": "integer"
+    },
+    "armor": {
+      "type": "integer"
+    },
+    "bonusMax": {
+      "type": "integer"
+    },
+    "bonus": {
+      "type": "integer"
+    },
+    "speedMax": {
+      "type": "string",
+      "enum": [ "Static", "Slow", "Average", "Fast", "VeryFast", "UltraFast" ]
+    },
+    "speed": {
+      "type": "string",
+      "enum": [ "Static", "Slow", "Average", "Fast", "VeryFast", "UltraFast" ]
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\ability-schema.json"
+      }
+    }
+  },
+  "required": [ "tag", "name", "description", "icon", "armorMax", "armor", "bonusMax", "bonus", "speedMax", "speed" ]
+}

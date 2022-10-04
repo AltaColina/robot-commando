@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/choice-schema.json",
+  "title": "JSON Schema for Choice",
+
+  "type": "object",
+
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "integer"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "effect": {
+      "type": "string"
+    },
+    "visibleWhenDisabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [ "text", "link" ]
+}

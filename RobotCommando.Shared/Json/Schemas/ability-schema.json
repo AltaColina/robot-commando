@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/abiity-schema.json",
+  "title": "JSON Schema for Choice",
+
+  "type": "object",
+
+  "definitions": {
+    "BattlePhase": {
+      "type": "string",
+      "enum": [ "BeforeBattle", "BeforeRound", "BeforeRoll", "AfterRoll", "BeforeHit", "AfterHit", "AfterRound", "AfterBattle" ]
+    }
+  },
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string",
+      "enum": [ "ActiveAbility", "PassiveAbility", "TriggerAbility" ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "BeforeBattle": { "type": "string" },
+          "BeforeRound": { "type": "string" },
+          "BeforeRoll": { "type": "string" },
+          "AfterRoll": { "type": "string" },
+          "BeforeHit": { "type": "string" },
+          "AfterHit": { "type": "string" },
+          "AfterRound": { "type": "string" },
+          "AfterBattle": { "type": "string" }
+        }
+      }
+    },
+    "condition": {
+      "type": "string"
+    },
+    "phase": {
+      "$ref": "#/definitions/BattlePhase"
+    },
+    "usages": {
+      "type": "integer"
+    }
+  },
+  "required": [ "tag", "name", "description", "icon", "effects" ]
+}

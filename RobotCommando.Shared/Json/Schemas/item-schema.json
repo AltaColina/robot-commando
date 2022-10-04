@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/item-schema.json",
+  "title": "JSON Schema for Item",
+
+  "definitions": {
+    "ItemTrigger": {
+      "type": "object",
+      "properties": {
+        "condition": { "type": "string" },
+        "effect": { "type": "string" }
+      },
+      "required": ["effect"]
+    }
+  },
+
+  "type": "object",
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "onAquire": { "$ref": "#/definitions/ItemTrigger" },
+    "onDiscard": { "$ref": "#/definitions/ItemTrigger" },
+    "onUse": { "$ref": "#/definitions/ItemTrigger" }
+  },
+  "required": [ "tag", "name", "description", "icon", "text", "link" ]
+}

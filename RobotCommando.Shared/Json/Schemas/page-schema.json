@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/AltaColina/robot-commando/tree/main/RobotCommando.Shared/Json/Schemas/page-schema.json",
+  "title": "JSON Schema for page format",
+
+  "type": "object",
+
+  "properties": {
+    "number": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string",
+      "enum": [
+        "Unknown",
+        "Current",
+        "Capital City",
+        "City of Industry",
+        "City of Knowledge",
+        "City of Pleasure",
+        "City of Storms",
+        "City of the Guardians",
+        "City of the Jungle",
+        "City of Worship"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "text2": {
+      "type": "string"
+    },
+    "choices": {
+      "type": "array",
+      "items": {
+        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\choice-schema.json"
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\item-schema.json"
+      }
+    },
+    "robots": {
+      "type": "array",
+      "items": {
+        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\robot-schema.json"
+      }
+    },
+    "monsters": {
+      "type": "array",
+      "items": {
+        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\monster-schema.json"
+      }
+    },
+    "enemies": {
+      "type": "array",
+      "items": {
+        "$ref": "D:\\Development\\robot-commando\\RobotCommando.Shared\\Json\\Schemas\\enemy-schema.json"
+      }
+    },
+    "effects": {
+      "type": "string"
+    }
+  }
+}
