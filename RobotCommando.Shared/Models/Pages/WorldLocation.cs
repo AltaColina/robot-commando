@@ -4,6 +4,7 @@ public enum WorldLocation
 {
     Unknwown,
     Current,
+    Farm,
     CapitalCity,
     CityOfIndustry,
     CityOfKnowledge,

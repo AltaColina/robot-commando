@@ -36,5 +36,5 @@
     "onDiscard": { "$ref": "#/definitions/ItemTrigger" },
     "onUse": { "$ref": "#/definitions/ItemTrigger" }
   },
-  "required": [ "tag", "name", "description", "icon", "text", "link" ]
+  "required": [ "tag", "name", "description", "icon" ]
 }

@@ -10,6 +10,7 @@ public sealed class WorldLocationJsonConverter : JsonConverter<WorldLocation>
     {
         ["Unknown"] = WorldLocation.Unknwown,
         ["Current"] = WorldLocation.Current,
+        ["Farm"] = WorldLocation.Farm,
         ["Capital City"] = WorldLocation.CapitalCity,
         ["City of Industry"] = WorldLocation.CityOfIndustry,
         ["City of Knowledge"] = WorldLocation.CityOfKnowledge,
@@ -24,6 +25,7 @@ public sealed class WorldLocationJsonConverter : JsonConverter<WorldLocation>
     {
         [WorldLocation.Unknwown] = "Unknown",
         [WorldLocation.Current] = "Current",
+        [WorldLocation.Farm] = "Farm",
         [WorldLocation.CapitalCity] = "Capital City",
         [WorldLocation.CityOfIndustry] = "City of Industry",
         [WorldLocation.CityOfKnowledge] = "City of Knowledge",
